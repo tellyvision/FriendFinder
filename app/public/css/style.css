@@ -1,0 +1,31 @@
+body {
+width: 80%;
+margin: 0px auto; 
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+main h1 {
+font-weight: bold;
+}
+
+main h2 {
+font-weight: 300;
+}
+
+.mainpanel{
+	margin: 50px;
+}
+
+#mainpanel-content {
+margin: 50px;
+}
+
+img {
+	width: 80%;
+}

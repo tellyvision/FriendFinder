@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<div id="mainpanel-content">
+					<h3>Survey Questions</h3>
+					<div class="divider"></div>
+
+					<h5>About You</h5>
+
+					<div class="input-field col s12">
+						<h6>Name (Required)</h6>
+						<input type="text" class="validate" placeholder="Your Name Here" id="userName">
+					</div>
+
+					<div class="input-field col s12">
+						<h6>Link to Photo Image (Required)</h6>
+						<input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+					</div>
+
+					<div class="divider"></div>
+					<h5>Survey Questions</h5>
+					<div class="input-field col s12">
+						<h5>Q1</h5>
+						<h6>Your mind is always buzzing with unexplored ideas and plans.</h6>
+						<select id="question1">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q2</h5>
+						<h6>Generally speaking, you are always a nervous wreck.</h6>
+						<select id="question2">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q3</h5>
+						<h6>You find it hard to stay relaxed and focused even when there is even the slightest pressure.</h6>
+						<select id="question3">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q4</h5>
+						<h6>You don't want to try new things due to the fear of failure</h6>
+						<select id="question4">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q5</h5>
+						<h6>People always upset you.</h6>
+						<select id="question5">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q6</h5>
+						<h6>You don't care about what other people think of you.</h6>
+						<select id="question6">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q7</h5>
+						<h6>In a discussion, truth should be more important than people’s sensitivities.</h6>
+						<select id="question7">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q8</h5>
+						<h6>You rarely get carried away by fantasies and ideas.</h6>
+						<select id="question8">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q9</h5>
+						<h6>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h6>
+						<select id="question9">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div class="input-field col s12">
+						<h5>Q10</h5>
+						<h6>You feel more energetic after spending time with a group of people.</h6>
+						<select id="question10">
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+
+					<div>
+						<button class="btn" type="submit" name="action" id="submitButton">Submit Responses
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal for Friend Match-->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Friend Match!!!</h4>
+			<div class="divider"></div>
+			<h6 id="userMatch"></h6>
+			<img id="userMatchImage" class="materialboxed" src="">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="btn">Take Survey Again</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+
+			$('.modal').modal({
+				dismissible: false,
+				opacity: .5,
+				startingTop: '4%',
+				endingTop: '10%'
+			});
+		});
+
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+      			$('#modal1').modal('open');
+      		});
+		});
+	</script>
+</body>
+</html>
